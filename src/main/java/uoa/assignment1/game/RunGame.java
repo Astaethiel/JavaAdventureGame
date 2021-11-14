@@ -7,7 +7,10 @@ public class RunGame {
 	public static void main(String[] args) {
 		
         while (!gameOver) {
-			//complete the code
+			Map map = new Map (2,3);
+        	map.printLayout(); 
+			break;
+		//complete the code
 		}
 	}
 
