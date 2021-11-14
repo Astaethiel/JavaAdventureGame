@@ -18,10 +18,11 @@ public class Monster extends GameCharacter {
 	
 	public boolean successfulDefense() {
 		 Random rand = new Random();
-		  if (rand.nextInt(1) == 1) {
+		  if (rand.nextInt(2) == 1) {
 			  return true;
 		  } 
 		  return false;
+		  
 	}
 
 
