@@ -28,8 +28,9 @@ public class Monster extends GameCharacter {
 
 	
 	public String decideMove () {
-		
-		return "move";
+		Random rand = new Random();
+		String[] moves = {"up","down","left","right"};
+		return moves[rand.nextInt(3)];
 	}
 
 }
