@@ -12,6 +12,9 @@ public class Monster extends GameCharacter {
 	public void hurtCharacter(GameCharacter character) {
 		if (character.successfulDefense() == false) {
 			character.setHealth(character.getHealth()-20); 
+			System.out.println("!!HIT!! Monster successfully attacked Player");
+		} else{
+			System.out.println("!!MISS!! Monster1 successfully defended attack from Player");
 		}
 	}
 
@@ -24,13 +27,11 @@ public class Monster extends GameCharacter {
 		  return false;
 		  
 	}
-
-
 	
 	public String decideMove () {
 		Random rand = new Random();
 		String[] moves = {"up","down","left","right"};
-		return moves[rand.nextInt(3)];
+		return moves[rand.nextInt(4)];
 	}
 
 }

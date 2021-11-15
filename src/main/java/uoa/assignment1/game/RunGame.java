@@ -9,15 +9,15 @@ public class RunGame {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);  // Create a Scanner object
-		Game game = new Game(3,3); //args[]);
+		Game game = new Game(3,2); //args[]);
 		String input = "";  // Read user inp
 		Integer round = 0;
 
         while (!gameOver) {
-			System.out.printf("Round %d%n", round);
+			System.out.printf("Round %d%n%n", round);
 			round++;
-			input = scan.nextLine();	
-		//complete the code
+			input = scan.nextLine();
+			game.nextRound(input);
 		}
 	}
 

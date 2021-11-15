@@ -12,7 +12,10 @@ public class Player extends GameCharacter{
 	public
 	void hurtCharacter(GameCharacter character) {
 		if (character.successfulDefense() == false) {
-			character.setHealth(character.getHealth()-50); 
+			character.setHealth(character.getHealth()-50);
+			System.out.println("!!HIT!! Player successfully attacked Monster");
+		} else{
+			System.out.println("!!MISS!! Monster1 successfully defended attack from Player");
 		}
 	}
 
